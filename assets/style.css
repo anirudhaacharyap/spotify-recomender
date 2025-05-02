@@ -1,57 +1,29 @@
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--background);
-}
-
-::-webkit-scrollbar-thumb {
-    background: #333;
-    border-radius: 4px;
-}
-
-/* Tab styling */
-[data-baseweb="tab-list"] {
-    gap: 8px;
-}
-
-[data-baseweb="tab"] {
-    background: #282828 !important;
-    color: white !important;
+/* Improved search input */
+div[data-baseweb="input"] {
+    background-color: #333333 !important;
     border-radius: 8px !important;
-    padding: 8px 16px !important;
-    transition: all 0.3s !important;
+    margin-bottom: 20px;
 }
 
-[data-baseweb="tab"]:hover {
-    background: #383838 !important;
+div[data-baseweb="input"] input {
+    color: white !important;
+    font-size: 16px !important;
+    padding: 12px !important;
 }
 
-[aria-selected="true"] {
-    background: var(--primary) !important;
-    color: black !important;
+/* Better select box */
+div[data-baseweb="select"] > div {
+    background-color: #333333 !important;
+    border-radius: 8px !important;
+    margin-bottom: 20px;
 }
 
-/* Input focus effects */
-.stTextInput>div>div>input:focus {
-    box-shadow: 0 0 0 2px var(--primary) !important;
-    border-color: var(--primary) !important;
+/* Results container */
+.stMarkdown {
+    margin-top: 30px !important;
 }
 
-/* Plotly chart adjustments */
-.plot-container .main-svg {
-    border-radius: 12px !important;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .stApp {
-        padding: 1rem !important;
-    }
-    
-    .song-card {
-        margin-bottom: 0.5rem !important;
-    }
+/* Cards spacing */
+.stColumn {
+    padding: 10px !important;
 }
